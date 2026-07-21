@@ -72,6 +72,70 @@ loadResult();
 
 }
 
+const deadline =
+new Date(
+"July 25, 2026 23:59:59"
+).getTime();
+
+
+
+setInterval(()=>{
+
+
+let now =
+new Date()
+.getTime();
+
+
+
+let distance =
+deadline-now;
+
+
+
+let day =
+Math.floor(
+distance/(1000*60*60*24)
+);
+
+
+
+let hour =
+Math.floor(
+(distance%(1000*60*60*24))
+/(1000*60*60)
+);
+
+
+
+let minute =
+Math.floor(
+(distance%(1000*60*60))
+/(1000*60)
+);
+
+
+
+let second =
+Math.floor(
+(distance%(1000*60))
+/1000
+);
+
+
+
+document
+.getElementById("timer")
+.innerHTML=
+
+day+" Hari "+
+hour+" Jam "+
+minute+" Menit "+
+second+" Detik";
+
+
+
+},1000);
 
 
 
