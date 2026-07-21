@@ -51,6 +51,15 @@ window.location.href =
 
 }
 
+window.onload=function(){
+
+checkVotingStatus();
+
+loadResult();
+
+countdown();
+
+};
 
 // ===============================
 // KONFIRMASI SEBELUM VOTE
