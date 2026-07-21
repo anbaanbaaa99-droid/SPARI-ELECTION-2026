@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>
+SPARI Winner
+</title>
+
+
+</head>
+
+
+<body>
+
+
+<h1>
+🎉 HASIL PEMILIHAN SPARI
+</h1>
+
+
+<h2 id="winner">
+
+Menghitung...
+
+</h2>
+
+
+<script>
+
+
+const API_URL=
+"URL_APPSCRIPT";
+
+
+
+fetch(API_URL)
+
+.then(res=>res.json())
+
+.then(data=>{
+
+
+if(
+data.kandidat1 >
+data.kandidat2
+){
+
+
+winner.innerHTML=
+"Kandidat 1 Terpilih";
+
+
+}
+
+
+else{
+
+
+winner.innerHTML=
+"Kandidat 2 Terpilih";
+
+
+}
+
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
