@@ -1,31 +1,44 @@
-const PASSWORD =
-"SPARI2026";
+const API_URL =
+"https://script.google.com/macros/s/GANTI_URL_APPSCRIPT/exec";
 
 
 
 function login(){
 
 
-let input =
+
+let password =
 document
 .getElementById("password")
 .value;
 
 
 
-if(input == PASSWORD){
+fetch(API_URL+"?action=login&password="+password)
 
 
-localStorage
-.setItem(
+
+.then(res=>res.json())
+
+
+.then(data=>{
+
+
+
+if(data.login){
+
+
+
+localStorage.setItem(
 "admin",
 "true"
 );
 
 
 
-window.location =
+window.location=
 "admin.html";
+
 
 
 }
@@ -39,6 +52,10 @@ alert(
 
 
 }
+
+
+
+});
 
 
 
