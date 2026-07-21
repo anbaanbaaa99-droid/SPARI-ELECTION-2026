@@ -105,6 +105,27 @@ window.open(API_URL+"?export=true");
 }
 
 
+function closeVote(){
+
+
+alert(
+"Voting ditutup manual melalui Sheet"
+);
+
+
+}
+
+
+
+function openVote(){
+
+
+alert(
+"Voting dibuka manual melalui Sheet"
+);
+
+
+}
 
 
 window.onload=function(){
