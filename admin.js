@@ -58,6 +58,14 @@ persen1=
 persen2=
 (data.kandidat2/data.total)*100;
 
+createChart(
+
+data.kandidat1,
+
+data.kandidat2
+
+);
+  
 
 }
 
