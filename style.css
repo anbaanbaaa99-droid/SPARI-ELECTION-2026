@@ -245,3 +245,25 @@ background:#020617;
 
 
 }
+
+.countdown{
+
+text-align:center;
+
+padding:50px;
+
+background:#020617;
+
+}
+
+
+
+#timer{
+
+font-size:50px;
+
+font-weight:bold;
+
+color:#facc15;
+
+}
