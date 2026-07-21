@@ -1,6 +1,6 @@
 
 const API_URL =
-"MASUKKAN_URL_APPSCRIPT_DISINI";
+"https://script.google.com/macros/s/AKfycbxmXEmGD-lc-gHLFPFufWdq2gcGCRVtwoOoxP53m_fTLanKQG7ihTXLtT2CyNNJTSq5/exec";
 
 
 
