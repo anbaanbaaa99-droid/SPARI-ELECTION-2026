@@ -24,6 +24,32 @@ function goVote(){
 }
 
 
+function checkVotingStatus(){
+
+
+fetch(API_URL)
+
+
+.then(res=>res.json())
+
+
+.then(data=>{
+
+
+if(data.status=="CLOSED"){
+
+
+window.location.href =
+"closed.html";
+
+
+}
+
+
+});
+
+
+}
 
 
 // ===============================
