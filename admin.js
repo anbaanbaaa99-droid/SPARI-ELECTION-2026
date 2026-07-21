@@ -83,7 +83,16 @@ persen2+"%";
 
 }
 
+if(
+localStorage.getItem("admin")
+!="true"
 
+){
+
+window.location=
+"admin-login.html";
+
+}
 
 
 
