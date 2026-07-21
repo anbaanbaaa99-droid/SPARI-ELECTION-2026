@@ -61,7 +61,72 @@ persen2=
 
 }
 
+let chart;
 
+
+
+function createChart(
+kandidat1,
+kandidat2
+){
+
+
+
+let ctx =
+document
+.getElementById(
+"voteChart"
+);
+
+
+
+if(chart){
+
+chart.destroy();
+
+}
+
+
+
+chart =
+new Chart(ctx,{
+
+type:"doughnut",
+
+
+data:{
+
+
+labels:[
+
+"Kandidat 1",
+
+"Kandidat 2"
+
+],
+
+
+
+datasets:[{
+
+data:[
+
+kandidat1,
+
+kandidat2
+
+]
+
+}]
+
+}
+
+
+});
+
+
+
+}
 
 
 document
