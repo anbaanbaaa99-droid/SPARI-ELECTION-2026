@@ -1,3 +1,15 @@
+
+// PROTEKSI HALAMAN ADMIN
+
+if(
+localStorage.getItem("admin") !== "true"
+){
+
+window.location.href =
+"admin-login.html";
+
+}
+
 const API_URL =
 "https://script.google.com/macros/s/GANTI_URL_APPSCRIPT/exec";
 
