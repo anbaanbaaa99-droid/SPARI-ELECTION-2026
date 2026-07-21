@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+SPARI Election Admin Dashboard
+</title>
+
+
+<link rel="stylesheet" href="admin.css">
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<h1>
+SPARI ELECTION DASHBOARD
+</h1>
+
+
+<p>
+Monitoring Pemilihan Wakil Ketua SPARI
+</p>
+
+
+</header>
+
+
+
+
+
+<section class="dashboard">
+
+
+<div class="box">
+
+<h2>
+Total Pemilih
+</h2>
+
+
+<h1 id="total">
+0
+</h1>
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h2>
+Kandidat 1
+</h2>
+
+
+<h1 id="kandidat1">
+0
+</h1>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h2>
+Kandidat 2
+</h2>
+
+
+<h1 id="kandidat2">
+0
+</h1>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="chart">
+
+
+<h2>
+Persentase Suara
+</h2>
+
+
+<div class="bar">
+
+
+<div id="chart1">
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="bar">
+
+
+<div id="chart2">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+Data Pemilih
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>No</th>
+
+<th>Nama</th>
+
+<th>Kandidat</th>
+
+<th>Waktu</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="table">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+<button onclick="loadAdmin()">
+
+Refresh Data
+
+</button>
+
+
+
+<button onclick="exportCSV()">
+
+Export Excel
+
+</button>
+
+
+
+
+<script src="admin.js"></script>
+
+
+</body>
+
+
+</html>
